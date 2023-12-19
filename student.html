@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function display() {
+            var roll = document.getElementById("roll").value;          
+            var name = document.getElementById("name").value;
+            var mail = document.getElementById("mail").value;
+            var phone = document.getElementById("phone").value;
+            var pwd = document.getElementById("pwd").value;
+
+            document.write("roll number : "+roll+"<br>");
+            document.write(" name : "+name+"<br>");
+            document.write(" mail : "+mail+"<br>");
+            document.write(" phone : "+phone+"<br>");
+             
+        }
+    </script>
+</head>
+<body> 
+    <form method="post" name="form">
+        <b>Student Roll :</b> <input type="text" id="roll"><br><br>
+        <b>Student Name :</b> <input type="text" id="name" maxlength=25 ><br><br>
+        <b>email : </b> <input type="email" id="mail"><br><br>
+        <b>phone :</b> <input type="text" id="phone"><br><br>
+        <b>password :</b> <input type="password" id="pwd"><br><br>
+        <button onclick="display()"> submit</button>
+    </form>
+
+    
+   
+     
+</body>
+</html>
